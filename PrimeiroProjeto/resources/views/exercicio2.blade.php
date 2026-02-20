@@ -2,9 +2,9 @@
 
 @section('conteudo')
 
-<h1>Primeiro exemplo laravel</h1>
+<h1>Exercicio 2</h1>
 <form method="post" action="/resposta">
-  @CSRF
+    @CSRF
 <div class="mb-3">
               <label for="valor1" class="form-label">Informe o primeiro valor</label>
               <input type="number" id="valor1" name="valor1" class="form-control" required="">
@@ -15,8 +15,8 @@
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
-@isset($soma)
-<p class = "text-success">O valor da soma é {{ $soma }} </p>
+@isset($sub)
+<p class ="text-success">O valor da subtração é {{ $sub }}<p>
 @endisset
 
 @endsection
